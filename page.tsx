@@ -274,6 +274,7 @@ const experience = [
 
 const certifications = [
   "Customer Segmentation — LinkedIn Learning",
+  "Anthropic AI Fluency — Claude 101",
   "Critical Thinking — LinkedIn Learning",
   "Global Securities Market Virtual Summit",
   "Commodity Derivatives Market — NCDEX",
