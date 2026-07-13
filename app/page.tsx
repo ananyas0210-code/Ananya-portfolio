@@ -216,7 +216,6 @@ const projects: Project[] = [
 ];
 
 const skills = {
-  const skills = {
   "Quality Assurance": [
     "Manual Testing",
     "Black-Box Testing",
