@@ -216,46 +216,83 @@ const projects: Project[] = [
 ];
 
 const skills = {
-  "Business Analysis": [
-    "Requirement Gathering",
-    "Stakeholder Communication",
-    "Process Mapping",
-    "KPI Definition",
-    "Business Process Improvement",
+  const skills = {
+  "Quality Assurance": [
+    "Manual Testing",
+    "Black-Box Testing",
+    "Functional Testing",
+    "Regression Testing",
+    "Smoke Testing",
+    "Integration Testing",
+    "API Testing",
+    "User Acceptance Testing",
+    "Test Case Design",
+    "Defect Tracking",
   ],
-  "Data Analytics": [
-    "Python",
-    "SQL",
-    "Exploratory Data Analysis",
-    "Statistical Analysis",
-    "Machine Learning",
-  ],
-  "Business Intelligence": [
-    "Tableau",
-    "Power BI",
-    "Dashboard Development",
-    "Data Visualization",
-  ],
-  "Tools & Platforms": [
-    "Excel",
+  "Testing & Dev Tools": [
+    "JIRA",
+    "Postman",
+    "Git",
     "GitHub",
-    "Linux / Unix",
-    "Docker",
-    "Cloud Fundamentals",
+    "Linux",
+  ],
+  "Programming & Databases": [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "C++",
+    "SQL",
+    "MySQL",
+    "XGBoost",
+  ],
+  "BI & Analytics": [
+    "Power BI",
+    "Tableau",
+    "Advanced Excel",
+    "Data Visualization",
+    "Exploratory Data Analysis",
+    "KPI Development",
+  ],
+  "Business Analysis": [
+    "Requirements Analysis",
+    "Process Mapping",
+    "Stakeholder Communication",
+    "Workflow Documentation",
+    "UAT Support",
+    "Lucidchart",
+    "Microsoft Visio",
   ],
 };
 
 const experience = [
   {
-    role: "Operations Analyst",
-    company: "Deutsche Bank",
-    date: "Aug 2023 – Aug 2024",
+    role: "Software Engineer Intern",
+    company: "Best Automation & Robotics Company",
+    date: "Aug 2024 – May 2026",
     points: [
-      "Supported international banking operations and transaction workflows",
-      "Verified and managed international customer cash accounts",
-      "Analyzed transaction data to improve reporting accuracy",
-      "Supported compliance and audit-related processes",
-      "Contributed to process improvement through operational review",
+      "Built and tested a Python automation pipeline connecting real-time SCADA data with MySQL storage",
+      "Automated label generation and direct Zebra printer transmission for daily production workflows",
+      "Designed and unit-tested seven UI components for an HDRA medical equipment project",
+      "Conducted usability testing on button logic, layouts, and operator control flow",
+      "Implemented and integration-tested hardware control logic using ACS software",
+      "Built a catheter hole-punching machine control system using C++, Linux, Raspberry Pi, and sFoundation",
+      "Created Python validation scripts to verify SCADA data completeness before database insertion",
+      "Collaborated with mechanical and electrical engineers and maintained technical documentation",
+    ],
+  },
+  {
+    role: "QA Software Engineer",
+    company: "Deutsche Bank",
+    date: "Aug 2023 – Jun 2024",
+    points: [
+      "Performed functional, regression, smoke, and API testing for enterprise banking applications",
+      "Created test plans, test scenarios, and test scripts from business and functional requirements",
+      "Validated financial transactions, customer records, and integrations using SQL",
+      "Tested API request and response payloads, status codes, and error handling using Postman",
+      "Managed defects through logging, triage, tracking, retesting, and closure in JIRA",
+      "Worked with Business Analysts, Developers, and Product Owners in Agile Scrum ceremonies",
+      "Supported UAT through test-environment preparation and stakeholder coordination",
+      "Performed post-deployment smoke testing and release validation",
     ],
   },
   {
@@ -263,11 +300,14 @@ const experience = [
     company: "Verezo with IBM",
     date: "Jan 2022 – Jan 2023",
     points: [
-      "Cleaned and prepared datasets using Python",
-      "Optimized SQL queries for extraction and transformation",
-      "Conducted exploratory data analysis to identify business trends",
-      "Built dashboards and reports for stakeholders",
-      "Documented workflows and system processes",
+      "Cleaned, transformed, and validated ERP datasets using Python, Pandas, and NumPy",
+      "Optimized SQL and MySQL queries, improving recurring reporting performance by approximately 24%",
+      "Performed exploratory data analysis to identify trends and define business KPIs",
+      "Gathered and documented business and functional requirements",
+      "Created workflow diagrams and process maps using Lucidchart and Microsoft Visio",
+      "Developed and validated Power BI and Tableau dashboards",
+      "Supported UAT by preparing test data and coordinating stakeholder feedback",
+      "Produced operational reports and documented ERP process-improvement recommendations",
     ],
   },
 ];
@@ -361,9 +401,9 @@ export default function Page() {
             Ananya Sureshbabu.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5C4E45]">
-            Business Analyst with experience in financial operations, analytics,
-            and business intelligence. I enjoy turning data into clear insights
-            that help teams make better decisions.
+            QA & Software Engineer with 4+ years driving quality across Banking, Industrial Automation, Medical Devices, and Business Analytics. 
+            I turn complex requirements into airtight test strategies - from manual, functional, and API testing to SQL-backed data validation, catching what others miss before it hits production. 
+            I bridge business and tech fluently, partnering with BAs, developers, and product owners to ship reliable, compliant software.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -391,8 +431,8 @@ export default function Page() {
           </div>
 
           <div className="mt-8 space-y-2 text-[#5C4E45]">
-            <p>Based in Denton, TX</p>
-            <p>Open to Roles: Business Analyst, Data Analyst</p>
+            <p>Based in Loves Park, IL</p>
+            <p>Open to Roles: QA Engineer, Software Test Engineer, Business Analyst</p>
           </div>
         </div>
 
@@ -409,7 +449,7 @@ export default function Page() {
             <div className="mt-6 text-center">
               <h3 className="text-2xl font-semibold">Ananya Sureshbabu</h3>
               <p className="mt-2 text-[#6F4E37]">
-                Business Analyst | Data Analytics | Financial Operations
+                Software Engineer | QA Engineer | Business Analyst
               </p>
             </div>
 
@@ -420,7 +460,7 @@ export default function Page() {
               </a>
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-[#6F4E37]" />
-                Denton, Texas
+                Loves Park, Illinois
               </div>
               <a
                 href="https://www.linkedin.com/in/ananya-sureshbabu-09a057206/"
@@ -456,16 +496,13 @@ export default function Page() {
             <div className="p-8">
               <h3 className="text-xl font-semibold">About me</h3>
               <p className="mt-4 leading-8 text-[#5C4E45]">
-                I enjoy working with data to understand how businesses perform,
-                where improvements can be made, and how insights can support
-                better decisions. My background in financial operations and
-                analytics has helped me build a practical, business-focused
-                approach to analysis.
+                I am a Software Engineer and QA professional with experience testing enterprise banking applications, building automation pipelines, validating medical-device interfaces, and analyzing business data. 
+                My background combines software quality assurance, programming, automation, business analysis, and analytics, allowing me to connect technical solutions with business needs.
               </p>
               <div className="mt-6 space-y-2 text-[#5C4E45]">
-                <p><span className="font-medium text-[#2E241D]">Approach:</span> keep analysis clear and practical</p>
-                <p><span className="font-medium text-[#2E241D]">Strength:</span> turn data into usable insights</p>
-                <p><span className="font-medium text-[#2E241D]">Focus:</span> business analysis, reporting, and data-driven decisions</p>
+                <p><span className="font-medium text-[#2E241D]">Approach: keep analysis clear and practical</p>
+                <p><span className="font-medium text-[#2E241D]">Strength: connect technical implementation with business requirements</p>
+                <p><span className="font-medium text-[#2E241D]">Focus: software quality, automation, and reliable system delivery</p>
               </div>
             </div>
           </Card>
