@@ -499,9 +499,9 @@ export default function Page() {
                 My background combines software quality assurance, programming, automation, business analysis, and analytics, allowing me to connect technical solutions with business needs.
               </p>
               <div className="mt-6 space-y-2 text-[#5C4E45]">
-                <p><span className="font-medium text-[#2E241D]">Approach: keep analysis clear and practical</p>
-                <p><span className="font-medium text-[#2E241D]">Strength: connect technical implementation with business requirements</p>
-                <p><span className="font-medium text-[#2E241D]">Focus: software quality, automation, and reliable system delivery</p>
+                <p><span className="font-medium text-[#2E241D]">Approach:</span>{" "}understand requirements, test thoroughly, and continuously improve</p>
+                <p><span className="font-medium text-[#2E241D]">Strength:</span>{" "}connect technical implementation with business requirements</p>
+                <p><span className="font-medium text-[#2E241D]">Focus:</span>{" "}software quality, automation, and reliable system delivery</p>
               </div>
             </div>
           </Card>
